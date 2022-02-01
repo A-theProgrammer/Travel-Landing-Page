@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Travel Landing Page</title>
+
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo"> Travel </h2>
+      <div class="toggle"></div>
+
+    </header>
+    <video src="./media/beach.mp4" muted loop autoplay></video>
+
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Never Stop</h2>
+      <h3>Exploring the world</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio cum molestias eius ipsa numquam quo, qui nobis illo debitis, nam, quod soluta! Deserunt inventore quo aliquam consectetur beatae a, dicta suscipit blanditiis ab, modi quod.</p>
+
+      <a href="#" class="explore">Explore</a>
+    </div>
+
+    <ul class="social">
+      <li><a href="#"><img src="./media/facebook.png" alt="facebook logo"></a></li>
+      <li><a href="#"><img src="./media/twitter.png" alt="twitter logo"></a></li>
+      <li><a href="#"><img src="./media/instagram.png" alt="instagram logo"></a></li>
+    </ul>
+  </section>
+
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Destination</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+
+<script>
+  const menuToggle=document.querySelector('.toggle')
+  const showcase=document.querySelector('.showcase')
+
+  menuToggle.addEventListener('click',()=>{
+    menuToggle.classList.toggle('active')
+    showcase.classList.toggle('active')
+  })
+</script>
+
+</body>
+</html>
